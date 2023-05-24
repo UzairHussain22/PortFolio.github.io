@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+/* font-family: 'Poppins'; */
+body {
+    
+    background-color: #000000;
+   
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 80vw;
+    margin: auto;
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container nav ul{
+    list-style: none;
+    display: flex;
+}
+.header-container nav ul li{
+    padding: 1rem; 
+}
+
+.header-container nav ul li a{
+    font-family: 'Poppins';
+text-decoration: none;
+color: white;
+padding: 8px;
+font-size: 16px;}
+
+.header-container nav ul li a:hover{
+    color: #FFCC73;
+    border-bottom: 2px #FFCC73 solid;
+    
+}
+/* -------------------------------------hamburgermenu------------------- */
+
+.hamburger{
+ display: none;
+  cursor: pointer;
+
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: #FFCC73;
+}
+
+
+
+
+/* 
+--------------------------------SideBar----------------------- */
+.sidebar{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: #0E0E0E;
+    width: 5.2rem;
+    float: left;
+    position: fixed;
+   
+}
+/* 
+---------------------------Social Icons--------------------------------------- */
+.socialicons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 8px;
+    margin: 8px;
+    
+}
+.socialicons i{
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    color: grey;
+   
+    
+}
+.socialicons i:hover{
+   color: #FFCC73;
+    transform: translateX(12px);
+    transition: 0.5s;
+}
+/* ------------------button hire me--------------- */
+.hireme button{
+        color: #FFCC73;
+        background-color: #0E0E0E;
+         border: 1px #FFCC73 solid;
+         border-radius: 50px;
+        margin: 8px;
+        padding: 5px;
+        width: 70px;
+        height: 35px;
+        cursor: pointer;
+}
+.hireme button:hover{
+    transition: 0.4s;
+    box-shadow: 2px 5px 10px #FFCC73;
+}
+
+/* -------------------mainsection------------------ */
+.triangle{
+width: 80px;
+height: 80px;
+transform: rotate(30deg);
+position: relative;
+left: 8rem;
+background-color: #0E0E0E;
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+animation: flicker-in-2 6s ease-in;
+animation-iteration-count: infinite;
+}
+/* ----------------------------------------------copiedanimation------------------------------------- */
+@keyframes flicker-in-2 {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    10.1% {
+      opacity: 1;
+      box-shadow: none;
+    }
+    10.2% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    20% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    20.1% {
+      opacity: 1;
+      background-color: #FFCC73 ;
+    }
+    20.6% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    30% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    30.1% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.5% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.6% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    45% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    45.1% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55.1% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    57% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    57.1% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.3);
+    }
+    60% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.3);
+    }
+    60.1% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    65% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    65.1% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.3), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.3), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75.1% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    77% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    77.1% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85.1% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    86% {
+      opacity: 0;
+      box-shadow: none;
+    }
+    86.1% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+  }
+  
+/* ---------------------------------------------------------------------------------------------------------- */
+.circle{
+width: 50px;
+height: 50px;
+top: -4rem;
+position: relative;
+left: 15rem;
+background-color: #0E0E0E;
+clip-path: circle(50% at 50% 50%);
+animation-name: circ;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes circ{
+    
+0%,100%{
+transform: translate(0, 0);
+ }
+
+ 20%{
+    opacity: 0.2;
+    background-color: #FFCC73;
+}
+30%{
+    opacity: 0.3;
+
+}
+50%{
+    transform: translate(0, 0 , 0);
+  opacity: 0.1;
+  background-color: #FFCC73;
+    
+}
+80%{
+    opacity: 0.2;
+    background-color: #FFCC73;
+    
+}
+100%{
+    opacity: 0.6;
+    background-color: #FFCC73;
+    
+}
+
+}
+
+
+@keyframes tria{
+    
+}
+
+
+
+.rectangle{
+    width: 120px;
+    height: 60px;
+    position: relative;
+    left: 4rem;
+    transform: rotate(160deg);
+    clip-path: polygon(0% 25%, 100% 25%, 100% 57%, 0% 57%);
+    background-color: #0E0E0E;
+    animation-name: recta;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+/* -------------------------------animations--------------------------------------- */
+@keyframes recta {
+    0%, 100% {
+      transform: translate(0, 0);
+      transform: rotate(165deg);
+    }
+    
+    50% {
+      transform: translate(150px, 0);
+      transform: rotate(190deg);
+    }
+    
+    80% {
+      transform: translate(-150px, 0);
+      transform: rotate(165deg);
+    }}
+
+
+
+
+.shapes{
+    width: 20rem;
+    height: 18rem;
+    left: 1rem;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 10; 
+}
+.main{
+    width: 45vw;
+    margin: 11rem 15rem ;
+    column-gap: 15rem 80rem ;
+    
+}
+.main-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  
+}
+.main-imgs{
+    opacity: 0.8;
+    height: 80vh;
+    width: 85vw;
+    position: absolute;
+    margin: auto;
+    left: 12rem;
+    z-index: -1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    row-gap: 8rem;
+}
+.image img{
+    margin-top: -4.8rem;
+    margin-left: 12rem;
+    width: 76.7rem;
+    height:46.5rem;
+    opacity: 0.5;
+}
+/* ------------------------------heading and text------------------------- */
+.main-text h3{
+    letter-spacing: 2px;
+    font-family: 'Poppins';
+}
+.main-text h1{
+    letter-spacing: 2px;
+    font-family: 'Poppins';
+}
+
+
+.rec{
+    width: 3rem;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    border-top: 3px #FFCC73 solid ;
+    
+}
+/* -------------------------------------span hover effect----------------------------- */
+
+.wave  {
+    display:  inline-flex;
+}
+.waviy {
+    display: inline-block;
+    font-family: 'Poppins';
+    color: white;
+    font-size: 30px;
+    -webkit-box-reflect: below 0.1em linear-gradient(transparent, rgba(0, 0, 0, .2));
+}
+
+.waviy span:hover {
+  
+    display: inline-block;
+    color: #FFCC73;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+}
+
+@keyframes waviy {
+    60% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-15px)
+    }
+}
+.centertext h1{
+    margin: 1rem 0rem;
+    font-size: 25px;
+    margin-right: 1rem;
+   display: inline-flex;
+}
+
+/* ---------------------------paragraph------------------------------- */
+.description{
+    font-size: 16px;
+    font-family: 'Poppins';
+    color: grey;
+}
+
+/* -----------------------------------buttons------------------------- */
+
+.btn-main{
+    display: flex;
+    column-gap: 50px;
+    width: 25rem;
+
+}
+.btn-main button{
+    width: 12rem;
+    font-family: 'Poppins';
+    padding: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 2px solid #FFCC73;
+    border-radius: 40px;
+    background-color: #000000;
+    color: white;
+}
+.my-hire:hover {
+background-color: #FFCC73;
+color: #000000;
+cursor: pointer;
+font-weight: 600;
+box-shadow: 5px 2px 15px #FFCC73;
+
+}
+.view-work:hover{
+    background-color: #FFCC73;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 5px 2px 15px #FFCC73;
+}
+hr{
+    margin-top: 185px;
+    border-bottom: 2px #0E0E0E solid;
+}
+/* ---------------------------------aboutme section------------------ */
+
+
+
+
+
+/* ------------------------------------scroll effect for webpage navigation------------------ */
+.about-me{
+   margin: 6rem 12rem;
+    width: 85vw;
+    height: 75vh;
+    color: white ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+  column-gap: 2.5rem;    
+
+}
+.image-mine{
+   border: 2px solid #FFCC73; 
+  box-shadow: -15px 10px 10px #FFCC73;
+}
+.aboutmetext{
+  display: flex;
+  width: 50rem;
+  flex-direction: column;
+  row-gap: 2.8rem;
+  font-family: 'POPPINS';
+}
+.aboutmetext h2{
+  font-size: 18px;
+  color: #FFCC73;
+ display: inline-block;
+}
+.recc{
+  width: 3rem;
+  margin-bottom: 0.3rem;
+  margin-left: 1rem;
+  display: inline-block;
+  border-top: 3px #FFCC73 solid ;
+  
+}
+.aboutmetext p{
+  color: grey;
+  font-size: 15px;
+  width: 40rem;
+}
+.btn-CV{
+  
+  display: flex;
+  column-gap: 50px;
+
+}
+.btn-CV button{
+  width: 10rem;
+    font-family: 'Poppins';
+    padding: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 2px solid #FFCC73;
+    border-radius: 40px;
+    background-color: #000000;
+    color: white;
+}
+.CV:hover{
+  background-color: #FFCC73;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 5px 2px 15px #FFCC73;
+}
+.ab-hr{
+  margin-top: -0.5rem;
+}
+/* --------------------------------------Expertise Section--------------------------- */
+
+.expertise{
+  margin: 5rem 15rem;
+  color: white;
+}
+
+/* -----------------------------------------progressbar----------------------------- */
+.containerskills span{
+  color: grey;
+}
+.skills {
+
+  width: 100%;
+  max-width:600px;
+  padding: 0 20px;
+
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #EEEDF0;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar {
+  height: 14px;
+  background: #0E0E0E;
+  border-radius: 13px;
+}
+
+.skill-percentage {
+  height: 14px;
+  background: #FFCC73;
+  border-radius: 13px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+ 
+}
+
+
+.skill-percentage::before{
+  content: attr(per);
+  position: absolute;
+  padding: 2px 3px;
+  color:#FFCC73;
+  font-size: 15px;
+  top: -45px;
+  font-family: "POPPINS";
+  right: -15px;
+  transform: transition(50%); 
+}
+
+
+.skill-percentage::after {
+  content: "";
+  position: absolute;
+  width: 18px ;
+  height: 18px ;
+  border: 1px solid gold;
+  right:-5px;
+  top: -3.5px;
+  background-color: #0E0E0E;
+  border-radius: 10px;
+}
+
+@keyframes fillBars {
+  from{
+    width: 0;
+  }
+  to{
+   width: 100%; 
+  }
+}
